@@ -1,0 +1,274 @@
+.login,
+.registration {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  -webkit-transform: translateY(-120%);
+      -ms-transform: translateY(-120%);
+          transform: translateY(-120%);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 100;
+}
+
+.login.active,
+.registration.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.form {
+  padding: 12px 29px 60px 42px;
+  position: relative;
+  z-index: 5;
+  width: 390px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E4DEDE), color-stop(113.84%, rgba(217, 217, 217, 0)));
+  background: -o-linear-gradient(top, #E4DEDE 0%, rgba(217, 217, 217, 0) 113.84%);
+  background: linear-gradient(180deg, #E4DEDE 0%, rgba(217, 217, 217, 0) 113.84%);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 0px 0px 0px 123px;
+}
+
+.form::before {
+  content: "";
+  background: url("../img/form-decor.png") no-repeat;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.form__title {
+  font-family: "Dancing Script";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #4d4d4d;
+  margin-bottom: 24px;
+  font-style: italic;
+  text-shadow: 0px 4px 4px rgba(98, 146, 153, 0.8);
+}
+
+.form__input-box {
+  margin-bottom: 16px;
+}
+
+.form__input-box label {
+  display: block;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #575757;
+  margin-bottom: 5px;
+  font-style: italic;
+  text-shadow: 0px 4px 4px rgba(96, 134, 139, 0.8);
+}
+
+.form__input-box label span {
+  color: #fb3030;
+}
+
+.form__btn {
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 13px;
+  font-style: italic;
+  -webkit-text-stroke: 1px #6065DE;
+  padding: 6px 24px;
+  border-radius: 20px;
+  border: 4px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EA6969), to(#EA6969)) padding-box, -webkit-gradient(linear, left top, right top, color-stop(0, #6065DE), color-stop(98%, #EA6969)) border-box;
+  background: -o-linear-gradient(#EA6969, #EA6969) padding-box, -o-linear-gradient(left, #6065DE 0, #EA6969 98%) border-box;
+  background: linear-gradient(#EA6969, #EA6969) padding-box, linear-gradient(to right, #6065DE 0, #EA6969 98%) border-box;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.form__btn:hover {
+  color: #6065de;
+}
+
+.form__checkbox {
+  cursor: pointer;
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #191515;
+  margin-bottom: 5px;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.form__checkbox input {
+  display: none;
+}
+
+.form__checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  background: #FFFFFF;
+  border: 2px solid #6065DE;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.form__checkbox.active::before {
+  background: #6065DE;
+}
+
+.form__input,
+.radio-buttons-registration {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) padding-box, -webkit-gradient(linear, left top, right top, color-stop(0, #7575dd), color-stop(98%, rgba(117, 117, 221, 0))) border-box;
+  background: -o-linear-gradient(#ffffff, #ffffff) padding-box, -o-linear-gradient(left, #7575dd 0, rgba(117, 117, 221, 0) 98%) border-box;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #7575dd 0, rgba(117, 117, 221, 0) 98%) border-box;
+  border-radius: 18px;
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #6d6d6d;
+  margin-bottom: 0px;
+}
+
+.form__input:focus,
+.radio-buttons-registration:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) padding-box, -webkit-gradient(linear, left top, right top, color-stop(0, #7575dd), color-stop(98%, #7575dd)) border-box;
+  background: -o-linear-gradient(#ffffff, #ffffff) padding-box, -o-linear-gradient(left, #7575dd 0, #7575dd 98%) border-box;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #7575dd 0, #7575dd 98%) border-box;
+}
+
+.radio-buttons__item-registration::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.radio-buttons__item-registration:nth-child(1)::before {
+  border: 2px solid #6065DE;
+  background: #F80C0C;
+}
+
+.radio-buttons__item-registration:nth-child(2)::before {
+  border: 2px solid #6065DE;
+  background: #FF9F0E;
+}
+
+.radio-buttons__item-registration:nth-child(3)::before {
+  border: 2px solid #6065DE;
+  background: #FFE814;
+}
+
+.radio-buttons__item-registration:nth-child(4)::before {
+  border: 2px solid #6065DE;
+  background: #3AFA1B;
+}
+
+.radio-buttons__item-registration:nth-child(5)::before {
+  border: 2px solid #6065DE;
+  background: #39FCF0;
+}
+
+.radio-buttons__item-registration:nth-child(6)::before {
+  border: 2px solid #6065DE;
+  background: #3353FD;
+}
+
+.radio-buttons__item-registration:nth-child(7)::before {
+  border: 2px solid #6065DE;
+  background: #A73DFB;
+}
+
+.radio-buttons__item-registration.active {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.radio-buttons__item-registration.active::before {
+  border-width: 4px;
+  border-color: #EA6969;
+}
+
+.radio-buttons-registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.registration-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 22px;
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #6d6d6d;
+  margin-bottom: 0px;
+  font-style: italic;
+  text-shadow: 0px 4px 4px rgba(96, 134, 139, 0.8);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.registration-btn:hover {
+  color: #000;
+}
+
+.lost-password {
+  margin-top: 7px;
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4d4d4d;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: rgba(77, 77, 77, 0.8);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.lost-password:hover {
+  color: #000;
+}

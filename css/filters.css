@@ -1,0 +1,145 @@
+.filter-box__inner {
+  width: 505px;
+  height: 1540px;
+  position: absolute;
+  top: 110%;
+  left: -65px;
+  z-index: 100;
+  display: none;
+  background: url("../img/shop/shop-decor3.png") no-repeat 48px 56px, -o-linear-gradient(287.34deg, rgba(245, 219, 219, 0.67) 4.85%, rgba(150, 137, 137, 0.3015) 96.39%);
+  background: url("../img/shop/shop-decor3.png") no-repeat 48px 56px, linear-gradient(162.66deg, rgba(245, 219, 219, 0.67) 4.85%, rgba(150, 137, 137, 0.3015) 96.39%);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  border-radius: 0px 0px 170px 0px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.filter-box__inner.active {
+  display: block;
+}
+
+.filter__show-btn {
+  width: 230px;
+  height: 226px;
+  background: url("../img/shop/shop-decor1.png") no-repeat;
+  position: absolute;
+  top: -118px;
+  left: -90px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+.filter__item {
+  display: inline-block;
+  position: absolute;
+}
+
+.filter__item:nth-child(1) {
+  top: 195px;
+  left: 275px;
+}
+
+.filter__item:nth-child(2) {
+  top: 260px;
+  left: 145px;
+}
+
+.filter__item:nth-child(3) {
+  top: 590px;
+  left: 195px;
+}
+
+.filter__item:nth-child(4) {
+  bottom: 537px;
+  left: 130px;
+}
+
+.filter__item:nth-child(5) {
+  bottom: 335px;
+  left: 228px;
+}
+
+.filter__item:nth-child(6) {
+  bottom: 132px;
+  left: 125px;
+}
+
+.filter__title {
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90%;
+  color: #4D4D4d;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 1px 30px;
+  display: inline-block;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  border: 4px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faf3f3), to(#faf3f3)) padding-box, -webkit-gradient(linear, left top, right top, color-stop(0, #7575dd), color-stop(98%, rgba(117, 117, 221, 0))) border-box;
+  background: -o-linear-gradient(#faf3f3, #faf3f3) padding-box, -o-linear-gradient(left, #7575dd 0, rgba(117, 117, 221, 0) 98%) border-box;
+  background: linear-gradient(#faf3f3, #faf3f3) padding-box, linear-gradient(to right, #7575dd 0, rgba(117, 117, 221, 0) 98%) border-box;
+}
+
+.radio-buttons__item {
+  cursor: pointer;
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #191515;
+  margin-bottom: 5px;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.radio-buttons__item input {
+  display: none;
+}
+
+.radio-buttons__item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 3px solid;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.radio-buttons__item.active {
+  color: #EA6969;
+}
+
+.radio-buttons__item.active::before {
+  background: #EA6969;
+}
+
+.radio-buttons__item:nth-child(3n+1)::before {
+  border-color: #ffffff;
+}
+
+.radio-buttons__item:nth-child(3n+2)::before {
+  border-color: #EA6969;
+}
+
+.radio-buttons__item:nth-child(3n+3)::before {
+  border-color: #6065de;
+}
