@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Arizonia';
+    src: url('Arizonia-Regular.eot');
+    src: local('Arizonia Regular'), local('Arizonia-Regular'),
+        url('Arizonia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Arizonia-Regular.woff2') format('woff2'),
+        url('Arizonia-Regular.woff') format('woff'),
+        url('Arizonia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

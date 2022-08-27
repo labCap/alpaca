@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Damion';
+    src: url('Damion.eot');
+    src: local('Damion'),
+        url('Damion.eot?#iefix') format('embedded-opentype'),
+        url('Damion.woff2') format('woff2'),
+        url('Damion.woff') format('woff'),
+        url('Damion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
