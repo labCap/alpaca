@@ -44,6 +44,7 @@ $(document).ready(function () {
   });
 
   $(".profile-btn").click(function (event) {
+    $(".header__ico-link").not($(this)).removeClass("active");
     $(".profile-btn").not($(this)).removeClass("active");
 
     $(this).addClass("active");
@@ -60,8 +61,15 @@ $(document).ready(function () {
     $(".registration").toggleClass("active");
   });
 
-  // $(".wrapper").click(function (event) {
-  //   $(".login").removeClass("active");
-  //   $(".registration").removeClass("active");
-  // });
+  $(".burger").click(function (event) {
+    $(this).toggleClass("active");
+    $(".nav").toggleClass("active");
+  });
+
+  $(".btn-close").click(function (event) {
+    $(".nav").removeClass("active");
+    $(".burger").removeClass("active");
+    $(".registration").removeClass("active");
+    $(".login").removeClass("active");
+  });
 });

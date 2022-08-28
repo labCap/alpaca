@@ -29,11 +29,8 @@ const next = {
   num: 0,
 };
 
-const tegStyleArray = [
-  "background: #f5d29c;  border: 5px solid #ffffff;  color: #D21A1A;",
-  "background: #73B0B8F2;  border: 5px solid #ffffff;  color: #FAFCBA;",
-  "background: #FB3030CC;border: 5px solid #F5D29C;color: #F5D29C;",
-];
+const tegStyleArray = ["yellow-color-tag", "blue-color-tag", "red-color-tag"];
+
 const tegTextArray = [
   "<div>-50%</div> up to",
   "<div>NEW</div> collection",
@@ -126,42 +123,42 @@ function prevArr() {
 `;
 
   big.item.innerHTML = `
-<a href="shop.html" class="suggestions__title3 suggestions__title color-blue">
-  ${titleArray[next.num]}
-</a>
-<!-- suggestions__title -->
-<div class="suggestions__img  suggestions__img-big">
-  <img class=" suggestions__img3-src color-blue" src="img/suggestions-img-big${
-    imgArray[next.num]
-  }.png" alt="" />
-  <div class="suggestions__img-title">Hand knitted<br />cashmere</div>
-  <div class="suggestions__img-text3 suggestions__img-text">${
-    imgTextArray[next.num]
-  }</div>
-<div class="info-tag-circle" style="${tegStyleArray[randomTegStyle]}">
-${tegTextArray[randomTegStyle]}
-  </div>
+    <a href="shop.html" class="suggestions__title3 suggestions__title color-blue">
+      ${titleArray[next.num]}
+    </a>
+    <!-- suggestions__title -->
+    <div class="suggestions__img  suggestions__img-big">
+      <img class=" suggestions__img3-src color-blue" src="img/suggestions-img-big${
+        imgArray[next.num]
+      }.png" alt="" />
+      <div class="suggestions__img-title">Hand knitted<br />cashmere</div>
+      <div class="suggestions__img-text3 suggestions__img-text">${
+        imgTextArray[next.num]
+      }</div>
+    <div class="info-tag-circle ${tegStyleArray[randomTegStyle]}">
+      ${tegTextArray[randomTegStyle]}
+    </div>
   <!-- suggestions__img-text -->
 
-  <div class="suggestions-management">
-    <button class="arrow__prev arrow__btn" onclick="prevArr()">
-      <i class="ico-arrow1"></i>
-    </button>
-    <a href="shop.html" class="view btn">shop now</a>
-    <button class="arrow__next arrow__btn" onclick="nextArr()">
-      <i class="ico-arrow2"></i>
-    </button>
+    <div class="suggestions-management">
+      <button class="arrow__prev arrow__btn arrow__btn-rotate arrow__btn-rotate" onclick="prevArr()">
+        <i class="ico-arrow1"></i>
+      </button>
+      <a href="shop.html" class="view btn">shop now</a>
+      <button class="arrow__next arrow__btn arrow__btn-rotate arrow__btn-rotate" onclick="nextArr()">
+        <i class="ico-arrow2"></i>
+      </button>
+    </div>
   </div>
-</div>
-<!-- suggestions__img -->
-<div class="suggestions__text-box-big suggestions__text-box">
-  <p class="suggestions__descr suggestions__descr-big suggestions__descr-white">
-  ${descrArray[next.num]}
-  </p>
-  <div class="info-tag" style="${
-    tegStyleArray[randomTegStyle]
-  }">Reserve for yourself</div>
-</div>
+  <!-- suggestions__img -->
+  <div class="suggestions__text-box-big suggestions__text-box">
+    <p class="suggestions__descr suggestions__descr-big suggestions__descr-white">
+    ${descrArray[next.num]}
+    </p>
+    <div class="info-tag ${
+      tegStyleArray[randomTegStyle]
+    }">Reserve for yourself</div>
+  </div>
 `;
 
   next.item.innerHTML = `
@@ -228,17 +225,17 @@ function nextArr() {
     imgTextArray[prev.num]
   }</div>
   
-  <div class="info-tag-circle" style="${tegStyleArray[randomTegStyle]}">
+  <div class="info-tag-circle ${tegStyleArray[randomTegStyle]}">
   ${tegTextArray[randomTegStyle]}
   </div>
   <!-- suggestions__img-text -->
 
   <div class="suggestions-management">
-    <button class="arrow__prev arrow__btn" onclick="prevArr()">
+    <button class="arrow__prev arrow__btn arrow__btn-rotate arrow__btn-rotate" onclick="prevArr()">
       <i class="ico-arrow1"></i>
     </button>
     <a href="shop.html" class="view btn">shop now</a>
-    <button class="arrow__next arrow__btn" onclick="nextArr()">
+    <button class="arrow__next arrow__btn arrow__btn-rotate arrow__btn-rotate" onclick="nextArr()">
       <i class="ico-arrow2"></i>
     </button>
   </div>
@@ -249,7 +246,7 @@ function nextArr() {
   <p class="suggestions__descr suggestions__descr-big suggestions__descr-white">
   ${descrArray[prev.num]}
   </p>  
-  <div class="info-tag" style="${
+  <div class="info-tag ${
     tegStyleArray[randomTegStyle]
   }">Reserve for yourself</div>
 

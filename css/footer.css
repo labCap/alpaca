@@ -32,6 +32,8 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__text {
@@ -103,4 +105,12 @@
 
 .contact {
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

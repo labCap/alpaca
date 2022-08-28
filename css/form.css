@@ -70,8 +70,9 @@
   text-shadow: 0px 4px 4px rgba(96, 134, 139, 0.8);
 }
 
-.form__input-box label span {
-  color: #fb3030;
+.form__input-box label span,
+.form__input-box label.color-red {
+  color: #FB3030;
 }
 
 .form__btn {
@@ -271,4 +272,15 @@
 
 .lost-password:hover {
   color: #000;
+}
+
+@media (max-width: 425px) {
+  .login,
+  .registration {
+    right: 50px;
+  }
+
+  .form {
+    width: 320px;
+  }
 }

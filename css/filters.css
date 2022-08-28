@@ -143,3 +143,33 @@
 .radio-buttons__item:nth-child(3n+3)::before {
   border-color: #6065de;
 }
+
+@media (max-width: 1024px) {
+  .filter__show-btn {
+    position: absolute;
+    top: -60px;
+    left: -71px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter__show-btn {
+    position: absolute;
+    width: 197px;
+    top: 5px;
+    left: -71px;
+  }
+}
+
+@media (max-width: 425px) {
+  .filter-box__inner {
+    top: 143%;
+    left: -143px;
+  }
+
+  .filter__show-btn {
+    width: 246px;
+    top: -97px;
+    left: -133px;
+  }
+}

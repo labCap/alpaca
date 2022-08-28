@@ -173,6 +173,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -435,4 +437,10 @@
 
 .minus:hover {
   border-color: #EA6969;
+}
+
+@media (max-width: 425px) {
+  .product__info {
+    height: auto;
+  }
 }
